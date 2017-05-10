@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		9F37A99E1EC312CD00960F54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F37A99D1EC312CD00960F54 /* main.m */; };
 		9F37A9A11EC312CD00960F54 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F37A9A01EC312CD00960F54 /* AppDelegate.m */; };
-		9F37A9A41EC312CD00960F54 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F37A9A31EC312CD00960F54 /* ViewController.m */; };
 		9F37A9A71EC312CD00960F54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F37A9A51EC312CD00960F54 /* Main.storyboard */; };
 		9F37A9AA1EC312CD00960F54 /* E_vielas.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9F37A9A81EC312CD00960F54 /* E_vielas.xcdatamodeld */; };
 		9F37A9AC1EC312CD00960F54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F37A9AB1EC312CD00960F54 /* Assets.xcassets */; };
 		9F37A9AF1EC312CD00960F54 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F37A9AD1EC312CD00960F54 /* LaunchScreen.storyboard */; };
+		9F37A9BB1EC325A400960F54 /* UITabBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F37A9BA1EC325A400960F54 /* UITabBarView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,13 +21,13 @@
 		9F37A99D1EC312CD00960F54 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9F37A99F1EC312CD00960F54 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9F37A9A01EC312CD00960F54 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		9F37A9A21EC312CD00960F54 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		9F37A9A31EC312CD00960F54 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		9F37A9A61EC312CD00960F54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9F37A9A91EC312CD00960F54 /* E_vielas.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = E_vielas.xcdatamodel; sourceTree = "<group>"; };
 		9F37A9AB1EC312CD00960F54 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F37A9AE1EC312CD00960F54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9F37A9B01EC312CD00960F54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F37A9B91EC325A400960F54 /* UITabBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UITabBarView.h; path = ../UITabBarView.h; sourceTree = "<group>"; };
+		9F37A9BA1EC325A400960F54 /* UITabBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UITabBarView.m; path = ../UITabBarView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,8 +62,8 @@
 			children = (
 				9F37A99F1EC312CD00960F54 /* AppDelegate.h */,
 				9F37A9A01EC312CD00960F54 /* AppDelegate.m */,
-				9F37A9A21EC312CD00960F54 /* ViewController.h */,
-				9F37A9A31EC312CD00960F54 /* ViewController.m */,
+				9F37A9B91EC325A400960F54 /* UITabBarView.h */,
+				9F37A9BA1EC325A400960F54 /* UITabBarView.m */,
 				9F37A9A51EC312CD00960F54 /* Main.storyboard */,
 				9F37A9AB1EC312CD00960F54 /* Assets.xcassets */,
 				9F37A9AD1EC312CD00960F54 /* LaunchScreen.storyboard */,
@@ -154,9 +154,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F37A9A41EC312CD00960F54 /* ViewController.m in Sources */,
 				9F37A9AA1EC312CD00960F54 /* E_vielas.xcdatamodeld in Sources */,
 				9F37A9A11EC312CD00960F54 /* AppDelegate.m in Sources */,
+				9F37A9BB1EC325A400960F54 /* UITabBarView.m in Sources */,
 				9F37A99E1EC312CD00960F54 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
