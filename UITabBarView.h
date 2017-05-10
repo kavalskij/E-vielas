@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  UITabBarView.h
 //  E-vielas
 //
 //  Created by Aleksandrs Muravjovs on 10/05/2017.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface UITabBarView : UITabBarController
 
 @end
-
