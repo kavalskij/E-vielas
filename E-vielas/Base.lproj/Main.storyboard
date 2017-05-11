@@ -29,7 +29,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="E-vielu bibliotēka" id="Q0N-c5-sub"/>
+                    <tabBarItem key="tabBarItem" title="E-vielu bibliotēka" image="Library Icon (Tab Bar)" id="Q0N-c5-sub"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Egq-IS-loh" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -58,7 +58,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Meklēt pēc svītrkoda" id="ar1-1Z-W6n"/>
+                    <tabBarItem key="tabBarItem" title="Meklēt pēc svītrkoda" image="Camera Icon (Tab Bar)" id="ar1-1Z-W6n"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CMT-5l-Lqo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -91,7 +91,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Meklēt E-vielu" id="utr-BX-Ods"/>
+                    <tabBarItem key="tabBarItem" title="Meklēt E-vielu" image="Search Icon (Tab Bar)" id="utr-BX-Ods"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EUI-gj-CUD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -100,7 +100,6 @@
         <!--Tab Bar View-->
         <scene sceneID="4r1-gf-vHl">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fgm-D5-Lnq" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tabBarController id="5tZ-fs-md1" customClass="UITabBarView" sceneMemberID="viewController">
                     <tabBar key="tabBar" tag="1" contentMode="scaleToFill" id="Tqu-At-U8G">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
@@ -113,8 +112,14 @@
                         <segue destination="Mx7-IP-HUd" kind="relationship" relationship="viewControllers" id="1UA-Iw-gjB"/>
                     </connections>
                 </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fgm-D5-Lnq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-406" y="116"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Camera Icon (Tab Bar)" width="30" height="30"/>
+        <image name="Library Icon (Tab Bar)" width="30" height="30"/>
+        <image name="Search Icon (Tab Bar)" width="30" height="30"/>
+    </resources>
 </document>
