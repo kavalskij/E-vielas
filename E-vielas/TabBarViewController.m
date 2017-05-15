@@ -1,18 +1,18 @@
 //
-//  UITabBarView.m
+//  TabBarViewController.m
 //  E-vielas
 //
-//  Created by Aleksandrs Muravjovs on 10/05/2017.
+//  Created by Aleksandrs Muravjovs on 15/05/2017.
 //  Copyright © 2017 Aleksandrs Muravjovs. All rights reserved.
 //
 
-#import "UITabBarView.h"
+#import "TabBarViewController.h"
 
-@interface UITabBarView ()
+@interface TabBarViewController ()
 
 @end
 
-@implementation UITabBarView
+@implementation TabBarViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

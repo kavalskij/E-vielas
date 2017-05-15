@@ -13,7 +13,9 @@
 		9F37A9AA1EC312CD00960F54 /* E_vielas.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9F37A9A81EC312CD00960F54 /* E_vielas.xcdatamodeld */; };
 		9F37A9AC1EC312CD00960F54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F37A9AB1EC312CD00960F54 /* Assets.xcassets */; };
 		9F37A9AF1EC312CD00960F54 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F37A9AD1EC312CD00960F54 /* LaunchScreen.storyboard */; };
-		9F37A9BB1EC325A400960F54 /* UITabBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F37A9BA1EC325A400960F54 /* UITabBarView.m */; };
+		9F63CAC01EC99BF900625903 /* TabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F63CABF1EC99BF900625903 /* TabBarViewController.m */; };
+		9F63CACB1EC9AC9C00625903 /* Edatabase+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F63CAC81EC9AC9C00625903 /* Edatabase+CoreDataClass.m */; };
+		9F63CACC1EC9AC9C00625903 /* Edatabase+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F63CACA1EC9AC9C00625903 /* Edatabase+CoreDataProperties.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,8 +28,12 @@
 		9F37A9AB1EC312CD00960F54 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F37A9AE1EC312CD00960F54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9F37A9B01EC312CD00960F54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9F37A9B91EC325A400960F54 /* UITabBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UITabBarView.h; path = ../UITabBarView.h; sourceTree = "<group>"; };
-		9F37A9BA1EC325A400960F54 /* UITabBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UITabBarView.m; path = ../UITabBarView.m; sourceTree = "<group>"; };
+		9F63CABE1EC99BF900625903 /* TabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarViewController.h; sourceTree = "<group>"; };
+		9F63CABF1EC99BF900625903 /* TabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarViewController.m; sourceTree = "<group>"; };
+		9F63CAC71EC9AC9C00625903 /* Edatabase+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Edatabase+CoreDataClass.h"; path = "../Edatabase+CoreDataClass.h"; sourceTree = "<group>"; };
+		9F63CAC81EC9AC9C00625903 /* Edatabase+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Edatabase+CoreDataClass.m"; path = "../Edatabase+CoreDataClass.m"; sourceTree = "<group>"; };
+		9F63CAC91EC9AC9C00625903 /* Edatabase+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Edatabase+CoreDataProperties.h"; path = "../Edatabase+CoreDataProperties.h"; sourceTree = "<group>"; };
+		9F63CACA1EC9AC9C00625903 /* Edatabase+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Edatabase+CoreDataProperties.m"; path = "../Edatabase+CoreDataProperties.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,8 +68,12 @@
 			children = (
 				9F37A99F1EC312CD00960F54 /* AppDelegate.h */,
 				9F37A9A01EC312CD00960F54 /* AppDelegate.m */,
-				9F37A9B91EC325A400960F54 /* UITabBarView.h */,
-				9F37A9BA1EC325A400960F54 /* UITabBarView.m */,
+				9F63CABE1EC99BF900625903 /* TabBarViewController.h */,
+				9F63CABF1EC99BF900625903 /* TabBarViewController.m */,
+				9F63CAC71EC9AC9C00625903 /* Edatabase+CoreDataClass.h */,
+				9F63CAC81EC9AC9C00625903 /* Edatabase+CoreDataClass.m */,
+				9F63CAC91EC9AC9C00625903 /* Edatabase+CoreDataProperties.h */,
+				9F63CACA1EC9AC9C00625903 /* Edatabase+CoreDataProperties.m */,
 				9F37A9A51EC312CD00960F54 /* Main.storyboard */,
 				9F37A9AB1EC312CD00960F54 /* Assets.xcassets */,
 				9F37A9AD1EC312CD00960F54 /* LaunchScreen.storyboard */,
@@ -154,9 +164,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F63CAC01EC99BF900625903 /* TabBarViewController.m in Sources */,
+				9F63CACB1EC9AC9C00625903 /* Edatabase+CoreDataClass.m in Sources */,
+				9F63CACC1EC9AC9C00625903 /* Edatabase+CoreDataProperties.m in Sources */,
 				9F37A9AA1EC312CD00960F54 /* E_vielas.xcdatamodeld in Sources */,
 				9F37A9A11EC312CD00960F54 /* AppDelegate.m in Sources */,
-				9F37A9BB1EC325A400960F54 /* UITabBarView.m in Sources */,
 				9F37A99E1EC312CD00960F54 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -316,6 +328,7 @@
 				9F37A9B51EC312CD00960F54 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

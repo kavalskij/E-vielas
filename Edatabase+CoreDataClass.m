@@ -1,0 +1,13 @@
+//
+//  Edatabase+CoreDataClass.m
+//  E-vielas
+//
+//  Created by Aleksandrs Muravjovs on 15/05/2017.
+//  Copyright © 2017 Aleksandrs Muravjovs. All rights reserved.
+//
+
+#import "Edatabase+CoreDataClass.h"
+
+@implementation Edatabase
+
+@end
