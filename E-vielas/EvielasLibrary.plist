@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>eVielasLibrary</key>
+	<dict>
+		<key>eViela</key>
+		<array>
+			<string>E100</string>
+            <string>E101</string>
+            <string>E102</string>
+            <string>E104</string>
+            <string>E110</string>
+            <string>E120</string>
+            <string>E123</string>
+            <string>E124</string>
+            <string>E127</string>
+            <string>E128</string>
+            <string>E129</string>
+            <string>E131</string>
+            <string>E132</string>
+            <string>E133</string>
+            <string>E140</string>
+            <string>E141</string>
+            <string>E142</string>
+            <string>E150a</string>
+            <string>E150c</string>
+            <string>E150d</string>
+            <string>E151</string>
+            <string>E153</string>
+            <string>E154</string>
+            <string>E155</string>
+            <string>E160a</string>
+            <string>E160b</string>
+            <string>E160c</string>
+            <string>E160d</string>
+            <string>E160e</string>
+            <string>E160f</string>
+            <string>E161b</string>
+            <string>E161g</string>
+            <string>E162</string>
+            <string>E163</string>
+            <string>E171</string>
+            <string>E172</string>
+            <string>E173</string>
+            <string>E174</string>
+            <string>E175</string>
+            <string>E180</string>
+            
+            
+            
+		</array>
+		<key>nosaukumi</key>
+		<array>
+			<string>Kurkumīns</string>
+            <string>Riboflavīns</string>
+            <string>Tartrazīns</string>
+		</array>
+		<key>iespPielietojums</key>
+		<array>
+			<string>Krāsviela</string>
+            <string>-</string>
+            <string>Konditorejas izstrādājumi ,atspirdzinošie dzērieni, augļu sulas, marinēti dārzeņi, marcipāns, sausās zupas, siera cepumi, saldā kukurūza.
+                    Lietošana citur; kosmētika, vilnas un zīda krāsa.</string>
+		</array>
+		<key>iespIedarbiba</key>
+		<array>
+			<string>Drošs</string>
+            <string>Drošs</string>
+            <string>Astma, dermatīts, nātrene, depresija, bezmiegs, nav ieteicams bērniem!</string>
+            
+		</array>
+	</dict>
+</dict>
+</plist>

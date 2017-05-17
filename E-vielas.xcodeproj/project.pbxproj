@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F2D37401ECC5C1B00F362FB /* EvielasLibrary.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9F2D373F1ECC5C1B00F362FB /* EvielasLibrary.plist */; };
+		9F2D37431ECC606500F362FB /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F2D37421ECC606500F362FB /* TableViewController.m */; };
 		9F37A99E1EC312CD00960F54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F37A99D1EC312CD00960F54 /* main.m */; };
 		9F37A9A11EC312CD00960F54 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F37A9A01EC312CD00960F54 /* AppDelegate.m */; };
 		9F37A9A71EC312CD00960F54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F37A9A51EC312CD00960F54 /* Main.storyboard */; };
@@ -14,11 +16,12 @@
 		9F37A9AC1EC312CD00960F54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F37A9AB1EC312CD00960F54 /* Assets.xcassets */; };
 		9F37A9AF1EC312CD00960F54 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F37A9AD1EC312CD00960F54 /* LaunchScreen.storyboard */; };
 		9F63CAC01EC99BF900625903 /* TabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F63CABF1EC99BF900625903 /* TabBarViewController.m */; };
-		9F63CACB1EC9AC9C00625903 /* Edatabase+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F63CAC81EC9AC9C00625903 /* Edatabase+CoreDataClass.m */; };
-		9F63CACC1EC9AC9C00625903 /* Edatabase+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F63CACA1EC9AC9C00625903 /* Edatabase+CoreDataProperties.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9F2D373F1ECC5C1B00F362FB /* EvielasLibrary.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = EvielasLibrary.plist; sourceTree = "<group>"; };
+		9F2D37411ECC606500F362FB /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		9F2D37421ECC606500F362FB /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		9F37A9991EC312CD00960F54 /* E-vielas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "E-vielas.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F37A99D1EC312CD00960F54 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9F37A99F1EC312CD00960F54 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -30,10 +33,6 @@
 		9F37A9B01EC312CD00960F54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9F63CABE1EC99BF900625903 /* TabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarViewController.h; sourceTree = "<group>"; };
 		9F63CABF1EC99BF900625903 /* TabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarViewController.m; sourceTree = "<group>"; };
-		9F63CAC71EC9AC9C00625903 /* Edatabase+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Edatabase+CoreDataClass.h"; path = "../Edatabase+CoreDataClass.h"; sourceTree = "<group>"; };
-		9F63CAC81EC9AC9C00625903 /* Edatabase+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Edatabase+CoreDataClass.m"; path = "../Edatabase+CoreDataClass.m"; sourceTree = "<group>"; };
-		9F63CAC91EC9AC9C00625903 /* Edatabase+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Edatabase+CoreDataProperties.h"; path = "../Edatabase+CoreDataProperties.h"; sourceTree = "<group>"; };
-		9F63CACA1EC9AC9C00625903 /* Edatabase+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Edatabase+CoreDataProperties.m"; path = "../Edatabase+CoreDataProperties.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,11 +69,10 @@
 				9F37A9A01EC312CD00960F54 /* AppDelegate.m */,
 				9F63CABE1EC99BF900625903 /* TabBarViewController.h */,
 				9F63CABF1EC99BF900625903 /* TabBarViewController.m */,
-				9F63CAC71EC9AC9C00625903 /* Edatabase+CoreDataClass.h */,
-				9F63CAC81EC9AC9C00625903 /* Edatabase+CoreDataClass.m */,
-				9F63CAC91EC9AC9C00625903 /* Edatabase+CoreDataProperties.h */,
-				9F63CACA1EC9AC9C00625903 /* Edatabase+CoreDataProperties.m */,
+				9F2D37411ECC606500F362FB /* TableViewController.h */,
+				9F2D37421ECC606500F362FB /* TableViewController.m */,
 				9F37A9A51EC312CD00960F54 /* Main.storyboard */,
+				9F2D373F1ECC5C1B00F362FB /* EvielasLibrary.plist */,
 				9F37A9AB1EC312CD00960F54 /* Assets.xcassets */,
 				9F37A9AD1EC312CD00960F54 /* LaunchScreen.storyboard */,
 				9F37A9B01EC312CD00960F54 /* Info.plist */,
@@ -151,6 +149,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F2D37401ECC5C1B00F362FB /* EvielasLibrary.plist in Resources */,
 				9F37A9AF1EC312CD00960F54 /* LaunchScreen.storyboard in Resources */,
 				9F37A9AC1EC312CD00960F54 /* Assets.xcassets in Resources */,
 				9F37A9A71EC312CD00960F54 /* Main.storyboard in Resources */,
@@ -165,10 +164,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F63CAC01EC99BF900625903 /* TabBarViewController.m in Sources */,
-				9F63CACB1EC9AC9C00625903 /* Edatabase+CoreDataClass.m in Sources */,
-				9F63CACC1EC9AC9C00625903 /* Edatabase+CoreDataProperties.m in Sources */,
 				9F37A9AA1EC312CD00960F54 /* E_vielas.xcdatamodeld in Sources */,
 				9F37A9A11EC312CD00960F54 /* AppDelegate.m in Sources */,
+				9F2D37431ECC606500F362FB /* TableViewController.m in Sources */,
 				9F37A99E1EC312CD00960F54 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
