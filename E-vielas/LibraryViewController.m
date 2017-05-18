@@ -1,31 +1,37 @@
 //
-//  TableViewController.m
+//  LibraryViewController.m
 //  E-vielas
 //
-//  Created by Aleksandrs Muravjovs on 17/05/2017.
+//  Created by Aleksandrs Muravjovs on 18/05/2017.
 //  Copyright © 2017 Aleksandrs Muravjovs. All rights reserved.
 //
 
-#import "TableViewController.h"
+#import "LibraryViewController.h"
 
-@interface TableViewController ()
+@interface LibraryViewController ()
+
 
 @end
 
-@implementation TableViewController
+
+@implementation LibraryViewController
 
 @synthesize evielaslibrary,evielas, nosaukumi, iespPielietojums, iespIedarbiba;
 
 - (void)viewDidLoad {
+
     
     self.navigationItem.title = @"E-vielu Bibliotēka";
-    NSString *eVielasFile = [[NSBundle mainBundle] pathForResource:@"EvielasLibrary" ofType:@"pList"];
+    NSString *eVielasFile = [[NSBundle mainBundle] pathForResource:@"EvielasLibrary" ofType:@"plist"];
     evielaslibrary = [[NSDictionary alloc] initWithContentsOfFile:eVielasFile];
     
     evielas = [evielaslibrary objectForKey:@"eViela"];
     nosaukumi = [evielaslibrary objectForKey: @"nosaukumi"];
     iespPielietojums = [evielaslibrary objectForKey:@"iespPielietojums"];
     iespIedarbiba = [evielaslibrary objectForKey:@"iespIedarbiba"];
+    
+    self.tableView.backgroundColor = [UIColor redColor];
+
     
     [super viewDidLoad];
     
@@ -45,23 +51,26 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 
-    return 0;
+    return [evielas count];
 }
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
     
-    // Configure the cell...
+    //cell.backgroundColor = [UIColor redColor];
+    
+    NSString *nameOfEviela = [evielas objectAtIndex:indexPath.row];
+    cell.textLabel.text = nameOfEviela;
     
     return cell;
 }
-*/
+
 
 /*
 // Override to support conditional editing of the table view.

@@ -37,6 +37,35 @@
             </objects>
             <point key="canvasLocation" x="544.79999999999995" y="442.12893553223392"/>
         </scene>
+        <!--E-vielu Bibliotēka-->
+        <scene sceneID="6sg-hx-mm1">
+            <objects>
+                <tableViewController title="E-vielu Bibliotēka" id="nXi-jS-mEX" customClass="LibraryViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="43" sectionHeaderHeight="35" sectionFooterHeight="28" id="i3v-Sx-Nu4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="xvA-Qa-ukQ">
+                                <rect key="frame" x="0.0" y="35" width="375" height="43"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xvA-Qa-ukQ" id="C4b-Mu-00j">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="42.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="nXi-jS-mEX" id="vfJ-vH-OnW"/>
+                            <outlet property="delegate" destination="nXi-jS-mEX" id="aKH-Co-wzY"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="E-vielu Bibliotēka" image="Library Icon (Tab Bar)" id="kzh-Dl-7YE"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1L8-nV-G2e" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1302" y="96"/>
+        </scene>
         <!--Meklēt E-vielu-->
         <scene sceneID="csm-8j-XUQ">
             <objects>
@@ -70,99 +99,6 @@
             </objects>
             <point key="canvasLocation" x="544.79999999999995" y="-212.74362818590706"/>
         </scene>
-        <!--E-vielu bibliotēka-->
-        <scene sceneID="qza-5I-sSK">
-            <objects>
-                <tableViewController title="E-vielu bibliotēka" id="l2Z-rf-Eyp" customClass="TableViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="66" sectionHeaderHeight="28" sectionFooterHeight="28" id="eVb-Oz-Fa6">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="yfB-tc-JhJ">
-                                <rect key="frame" x="0.0" y="28" width="375" height="66"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yfB-tc-JhJ" id="xE1-cE-y7H">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="65.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="fx4-I7-WeD">
-                                <rect key="frame" x="0.0" y="94" width="375" height="66"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fx4-I7-WeD" id="7uM-fm-7iw">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="65.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="xdl-xW-3tU">
-                                <rect key="frame" x="0.0" y="160" width="375" height="66"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xdl-xW-3tU" id="z2h-o9-YMx">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="65.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Y6t-mI-jPC">
-                                <rect key="frame" x="0.0" y="226" width="375" height="66"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Y6t-mI-jPC" id="5FO-XD-v3s">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="65.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="0vl-LG-1Zi">
-                                <rect key="frame" x="0.0" y="292" width="375" height="66"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0vl-LG-1Zi" id="2gq-h5-iHY">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="65.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="c0W-af-G9j">
-                                <rect key="frame" x="0.0" y="358" width="375" height="66"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="c0W-af-G9j" id="EVc-Ed-8Aa">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="65.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="3ha-eL-Oq4">
-                                <rect key="frame" x="0.0" y="424" width="375" height="66"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3ha-eL-Oq4" id="aeY-Ra-nlh">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="65.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="3Cu-Wf-m2R">
-                                <rect key="frame" x="0.0" y="490" width="375" height="66"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3Cu-Wf-m2R" id="13z-wj-86z">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="65.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="tIC-Y1-Yiv">
-                                <rect key="frame" x="0.0" y="556" width="375" height="66"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tIC-Y1-Yiv" id="zFm-gY-sPr">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="65.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="l2Z-rf-Eyp" id="aDX-CF-Hlb"/>
-                            <outlet property="delegate" destination="l2Z-rf-Eyp" id="X9r-fb-mZK"/>
-                        </connections>
-                    </tableView>
-                    <tabBarItem key="tabBarItem" title="E-vielu Bibliotēka" image="Library Icon (Tab Bar)" id="piy-YO-g0o"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ZST-Eb-p9e" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1615" y="86"/>
-        </scene>
         <!--Tab Bar View Controller-->
         <scene sceneID="4r1-gf-vHl">
             <objects>
@@ -175,7 +111,7 @@
                     <connections>
                         <segue destination="Ju7-L2-Y3E" kind="relationship" relationship="viewControllers" id="gHd-gC-uUL"/>
                         <segue destination="2Gw-dk-okR" kind="relationship" relationship="viewControllers" id="EuG-n7-YQI"/>
-                        <segue destination="l2Z-rf-Eyp" kind="relationship" relationship="viewControllers" id="pY6-gM-YVc"/>
+                        <segue destination="nXi-jS-mEX" kind="relationship" relationship="viewControllers" id="DmE-0k-QYU"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fgm-D5-Lnq" userLabel="First Responder" sceneMemberID="firstResponder"/>
