@@ -7,6 +7,7 @@
 //
 
 #import "LibraryViewController.h"
+#import "Evielas.h"
 
 @interface LibraryViewController ()
 
@@ -16,30 +17,9 @@
 
 @implementation LibraryViewController
 
-@synthesize evielaslibrary,evielas, nosaukumi, iespPielietojums, iespIedarbiba;
-
 - (void)viewDidLoad {
-
-    
-    self.navigationItem.title = @"E-vielu Bibliotēka";
-    NSString *eVielasFile = [[NSBundle mainBundle] pathForResource:@"EvielasLibrary" ofType:@"plist"];
-    evielaslibrary = [[NSDictionary alloc] initWithContentsOfFile:eVielasFile];
-    
-    evielas = [evielaslibrary objectForKey:@"eViela"];
-    nosaukumi = [evielaslibrary objectForKey: @"nosaukumi"];
-    iespPielietojums = [evielaslibrary objectForKey:@"iespPielietojums"];
-    iespIedarbiba = [evielaslibrary objectForKey:@"iespIedarbiba"];
-    
-    self.tableView.backgroundColor = [UIColor redColor];
-
-    
     [super viewDidLoad];
-    
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -55,8 +35,8 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-
-    return [evielas count];
+    
+    return 3;
 }
 
 
@@ -65,8 +45,8 @@
     
     //cell.backgroundColor = [UIColor redColor];
     
-    NSString *nameOfEviela = [evielas objectAtIndex:indexPath.row];
-    cell.textLabel.text = nameOfEviela;
+    Evielas *eVielas = [[Evielas alloc] initWithIndex:0];
+    cell.textLabel.text = eVielas.eVielasNumurs;
     
     return cell;
 }
@@ -106,14 +86,19 @@
 }
 */
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqual:@"showEvielasDetails"]) {
+        EvielasDetailViewController *eVielasDetailViewController = (EvielasDetailViewController *)segue.destinationViewController;
+        eVielasDetailViewController.eVielas = [[Evielas alloc] initWithIndex:0];
+        
+    }
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
 }
-*/
+
 
 @end

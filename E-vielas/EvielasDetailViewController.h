@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+@class Evielas;
+
 @interface EvielasDetailViewController : UIViewController
+
+@property (strong, nonatomic) Evielas *eVielas;
 
 @end

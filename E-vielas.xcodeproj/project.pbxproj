@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9F2D37401ECC5C1B00F362FB /* EvielasLibrary.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9F2D373F1ECC5C1B00F362FB /* EvielasLibrary.plist */; };
 		9F37A99E1EC312CD00960F54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F37A99D1EC312CD00960F54 /* main.m */; };
 		9F37A9A11EC312CD00960F54 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F37A9A01EC312CD00960F54 /* AppDelegate.m */; };
 		9F37A9A71EC312CD00960F54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F37A9A51EC312CD00960F54 /* Main.storyboard */; };
@@ -16,10 +15,12 @@
 		9F37A9AF1EC312CD00960F54 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F37A9AD1EC312CD00960F54 /* LaunchScreen.storyboard */; };
 		9F63CAC01EC99BF900625903 /* TabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F63CABF1EC99BF900625903 /* TabBarViewController.m */; };
 		9FEC5E491ECDBB63005417EE /* LibraryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FEC5E481ECDBB63005417EE /* LibraryViewController.m */; };
+		9FEC5E4C1ED2E116005417EE /* EvielasDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FEC5E4B1ED2E116005417EE /* EvielasDetailViewController.m */; };
+		9FEC5E511ED30C27005417EE /* EvielasLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FEC5E501ED30C27005417EE /* EvielasLibrary.m */; };
+		9FEC5E541ED3130C005417EE /* Evielas.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FEC5E531ED3130C005417EE /* Evielas.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9F2D373F1ECC5C1B00F362FB /* EvielasLibrary.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = EvielasLibrary.plist; sourceTree = "<group>"; };
 		9F37A9991EC312CD00960F54 /* E-vielas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "E-vielas.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F37A99D1EC312CD00960F54 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9F37A99F1EC312CD00960F54 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -33,6 +34,12 @@
 		9F63CABF1EC99BF900625903 /* TabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarViewController.m; sourceTree = "<group>"; };
 		9FEC5E471ECDBB63005417EE /* LibraryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LibraryViewController.h; sourceTree = "<group>"; };
 		9FEC5E481ECDBB63005417EE /* LibraryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LibraryViewController.m; sourceTree = "<group>"; };
+		9FEC5E4A1ED2E116005417EE /* EvielasDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EvielasDetailViewController.h; sourceTree = "<group>"; };
+		9FEC5E4B1ED2E116005417EE /* EvielasDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EvielasDetailViewController.m; sourceTree = "<group>"; };
+		9FEC5E4F1ED30C27005417EE /* EvielasLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EvielasLibrary.h; sourceTree = "<group>"; };
+		9FEC5E501ED30C27005417EE /* EvielasLibrary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EvielasLibrary.m; sourceTree = "<group>"; };
+		9FEC5E521ED3130C005417EE /* Evielas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Evielas.h; sourceTree = "<group>"; };
+		9FEC5E531ED3130C005417EE /* Evielas.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Evielas.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,8 +78,13 @@
 				9F63CABF1EC99BF900625903 /* TabBarViewController.m */,
 				9FEC5E471ECDBB63005417EE /* LibraryViewController.h */,
 				9FEC5E481ECDBB63005417EE /* LibraryViewController.m */,
+				9FEC5E4A1ED2E116005417EE /* EvielasDetailViewController.h */,
+				9FEC5E4B1ED2E116005417EE /* EvielasDetailViewController.m */,
+				9FEC5E4F1ED30C27005417EE /* EvielasLibrary.h */,
+				9FEC5E501ED30C27005417EE /* EvielasLibrary.m */,
+				9FEC5E521ED3130C005417EE /* Evielas.h */,
+				9FEC5E531ED3130C005417EE /* Evielas.m */,
 				9F37A9A51EC312CD00960F54 /* Main.storyboard */,
-				9F2D373F1ECC5C1B00F362FB /* EvielasLibrary.plist */,
 				9F37A9AB1EC312CD00960F54 /* Assets.xcassets */,
 				9F37A9AD1EC312CD00960F54 /* LaunchScreen.storyboard */,
 				9F37A9B01EC312CD00960F54 /* Info.plist */,
@@ -149,7 +161,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F2D37401ECC5C1B00F362FB /* EvielasLibrary.plist in Resources */,
 				9F37A9AF1EC312CD00960F54 /* LaunchScreen.storyboard in Resources */,
 				9F37A9AC1EC312CD00960F54 /* Assets.xcassets in Resources */,
 				9F37A9A71EC312CD00960F54 /* Main.storyboard in Resources */,
@@ -163,9 +174,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FEC5E511ED30C27005417EE /* EvielasLibrary.m in Sources */,
 				9FEC5E491ECDBB63005417EE /* LibraryViewController.m in Sources */,
 				9F63CAC01EC99BF900625903 /* TabBarViewController.m in Sources */,
 				9F37A9AA1EC312CD00960F54 /* E_vielas.xcdatamodeld in Sources */,
+				9FEC5E4C1ED2E116005417EE /* EvielasDetailViewController.m in Sources */,
+				9FEC5E541ED3130C005417EE /* Evielas.m in Sources */,
 				9F37A9A11EC312CD00960F54 /* AppDelegate.m in Sources */,
 				9F37A99E1EC312CD00960F54 /* main.m in Sources */,
 			);

@@ -7,14 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "EvielasDetailViewController.h"
 
 @interface LibraryViewController : UITableViewController
 
-@property (nonatomic, strong) NSDictionary *evielaslibrary;
-@property (nonatomic, strong) NSArray *evielas;
-@property (nonatomic, strong) NSArray *nosaukumi;
-@property (nonatomic, strong) NSArray *iespPielietojums;
-@property (nonatomic, strong) NSArray *iespIedarbiba;
 
 
 @end

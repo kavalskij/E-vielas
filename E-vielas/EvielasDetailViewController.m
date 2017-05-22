@@ -7,6 +7,7 @@
 //
 
 #import "EvielasDetailViewController.h"
+#import "Evielas.h"
 
 @interface EvielasDetailViewController ()
 
@@ -16,6 +17,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    if (self.eVielas) {
+        
+    }
     // Do any additional setup after loading the view.
 }
 

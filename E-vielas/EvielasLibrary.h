@@ -8,6 +8,14 @@
 
 #import <Foundation/Foundation.h>
 
+extern NSString *const kEviela;
+extern NSString *const kNosaukums;
+extern NSString *const kIespPielietojums;
+extern NSString *const kIespIedarbiba;
+
 @interface EvielasLibrary : NSObject
+
+@property (strong, nonatomic) NSArray *library;
+
 
 @end
