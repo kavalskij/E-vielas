@@ -14,6 +14,7 @@
 		9F37A9AC1EC312CD00960F54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F37A9AB1EC312CD00960F54 /* Assets.xcassets */; };
 		9F37A9AF1EC312CD00960F54 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F37A9AD1EC312CD00960F54 /* LaunchScreen.storyboard */; };
 		9F63CAC01EC99BF900625903 /* TabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F63CABF1EC99BF900625903 /* TabBarViewController.m */; };
+		9FD17C2A1ED5997900CBC07D /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FD17C291ED5997900CBC07D /* SearchViewController.m */; };
 		9FEC5E491ECDBB63005417EE /* LibraryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FEC5E481ECDBB63005417EE /* LibraryViewController.m */; };
 		9FEC5E4C1ED2E116005417EE /* EvielasDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FEC5E4B1ED2E116005417EE /* EvielasDetailViewController.m */; };
 		9FEC5E511ED30C27005417EE /* EvielasLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FEC5E501ED30C27005417EE /* EvielasLibrary.m */; };
@@ -32,6 +33,8 @@
 		9F37A9B01EC312CD00960F54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9F63CABE1EC99BF900625903 /* TabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarViewController.h; sourceTree = "<group>"; };
 		9F63CABF1EC99BF900625903 /* TabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarViewController.m; sourceTree = "<group>"; };
+		9FD17C281ED5997900CBC07D /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
+		9FD17C291ED5997900CBC07D /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
 		9FEC5E471ECDBB63005417EE /* LibraryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LibraryViewController.h; sourceTree = "<group>"; };
 		9FEC5E481ECDBB63005417EE /* LibraryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LibraryViewController.m; sourceTree = "<group>"; };
 		9FEC5E4A1ED2E116005417EE /* EvielasDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EvielasDetailViewController.h; sourceTree = "<group>"; };
@@ -80,6 +83,8 @@
 				9FEC5E481ECDBB63005417EE /* LibraryViewController.m */,
 				9FEC5E4A1ED2E116005417EE /* EvielasDetailViewController.h */,
 				9FEC5E4B1ED2E116005417EE /* EvielasDetailViewController.m */,
+				9FD17C281ED5997900CBC07D /* SearchViewController.h */,
+				9FD17C291ED5997900CBC07D /* SearchViewController.m */,
 				9FEC5E4F1ED30C27005417EE /* EvielasLibrary.h */,
 				9FEC5E501ED30C27005417EE /* EvielasLibrary.m */,
 				9FEC5E521ED3130C005417EE /* Evielas.h */,
@@ -178,6 +183,7 @@
 				9FEC5E491ECDBB63005417EE /* LibraryViewController.m in Sources */,
 				9F63CAC01EC99BF900625903 /* TabBarViewController.m in Sources */,
 				9F37A9AA1EC312CD00960F54 /* E_vielas.xcdatamodeld in Sources */,
+				9FD17C2A1ED5997900CBC07D /* SearchViewController.m in Sources */,
 				9FEC5E4C1ED2E116005417EE /* EvielasDetailViewController.m in Sources */,
 				9FEC5E541ED3130C005417EE /* Evielas.m in Sources */,
 				9F37A9A11EC312CD00960F54 /* AppDelegate.m in Sources */,

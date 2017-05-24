@@ -20,6 +20,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -36,7 +38,8 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
-    return 3;
+    
+    return 4;
 }
 
 
@@ -45,8 +48,9 @@
     
     //cell.backgroundColor = [UIColor redColor];
     
-    Evielas *eVielas = [[Evielas alloc] initWithIndex:0];
+    Evielas *eVielas = [[Evielas alloc] initWithIndex:indexPath.row];
     cell.textLabel.text = eVielas.eVielasNumurs;
+
     
     return cell;
 }
@@ -91,11 +95,19 @@
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    if ([segue.identifier isEqual:@"showEvielasDetails"]) {
-        EvielasDetailViewController *eVielasDetailViewController = (EvielasDetailViewController *)segue.destinationViewController;
-        eVielasDetailViewController.eVielas = [[Evielas alloc] initWithIndex:0];
+ 
+    if ([segue.identifier isEqualToString:@"showEvielasDetails"]) {
+       
+        EvielasDetailViewController *detailViewController = [segue destinationViewController];
+        
+        NSIndexPath *indexPath = [[self tableView] indexPathForSelectedRow];
+        
+        
+        
+        
         
     }
+
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
 }

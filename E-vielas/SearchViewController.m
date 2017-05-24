@@ -1,29 +1,21 @@
 //
-//  EvielasDetailViewController.m
+//  SearchViewController.m
 //  E-vielas
 //
-//  Created by Aleksandrs Muravjovs on 22/05/2017.
+//  Created by Aleksandrs Muravjovs on 24/05/2017.
 //  Copyright © 2017 Aleksandrs Muravjovs. All rights reserved.
 //
 
-#import "EvielasDetailViewController.h"
-#import "Evielas.h"
+#import "SearchViewController.h"
 
-@interface EvielasDetailViewController ()
+@interface SearchViewController ()
 
 @end
 
-@implementation EvielasDetailViewController
+@implementation SearchViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    if (self.eVielas) {
-        self.eVielasNumurs.text = self.eVielas.eVielasNosaukums;
-        self.eVielasNosaukums.text = self.eVielas.eVielasNosaukums;
-        self.eVielasIespPielietojums.text = self.eVielas.eVielasIespPielietojums;
-        self.eVielasIespIedarbiba.text = self.eVielas.eVielasIespIedarbiba;
-    }
     // Do any additional setup after loading the view.
 }
 
@@ -31,6 +23,21 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+#pragma mark - UITextFieldDelegate
+
+- (BOOL)textFieldShouldClear:(UITextField *)textField  {
+    
+    [textField resignFirstResponder];
+    [self.searchBar resignFirstResponder];
+    
+    return NO;
+}
+
+
+
+
+
 
 /*
 #pragma mark - Navigation
