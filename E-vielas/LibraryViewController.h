@@ -8,10 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import "EvielasDetailViewController.h"
+#import "EvielasLibrary.h"
 
 @interface LibraryViewController : UITableViewController
 
+@property (strong, nonatomic) NSArray *eVielasArray;
 
-
+@property (strong, nonatomic) EvielasLibrary *eVielasLibrary;
 
 @end

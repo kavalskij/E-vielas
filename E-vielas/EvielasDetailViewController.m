@@ -19,7 +19,7 @@
     [super viewDidLoad];
     
     if (self.eVielas) {
-        self.eVielasNumurs.text = self.eVielas.eVielasNosaukums;
+        self.eVielasNumurs.text = self.eVielas.eVielasNumurs;
         self.eVielasNosaukums.text = self.eVielas.eVielasNosaukums;
         self.eVielasIespPielietojums.text = self.eVielas.eVielasIespPielietojums;
         self.eVielasIespIedarbiba.text = self.eVielas.eVielasIespIedarbiba;
