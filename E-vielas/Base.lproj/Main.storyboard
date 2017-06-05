@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,15 +22,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Šeit būs svītrkodu skaneris" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e39-yg-bAu">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Šeit būs svītrkodu skaneris" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e39-yg-bAu">
                                 <rect key="frame" x="53" y="323" width="268" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="e39-yg-bAu" firstAttribute="centerY" secondItem="KTm-HR-drh" secondAttribute="centerY" id="Rqd-aG-lhM"/>
+                            <constraint firstItem="e39-yg-bAu" firstAttribute="leading" secondItem="KTm-HR-drh" secondAttribute="leadingMargin" constant="37" id="Wsb-ca-xQW"/>
+                            <constraint firstItem="e39-yg-bAu" firstAttribute="centerX" secondItem="KTm-HR-drh" secondAttribute="centerX" id="lXB-lg-O6L"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Meklēt pēc svītrkoda" image="Camera Icon (Tab Bar)" id="ar1-1Z-W6n"/>
                 </viewController>
@@ -206,15 +211,18 @@
                                     <outlet property="delegate" destination="Ju7-L2-Y3E" id="DLJ-nw-Gss"/>
                                 </connections>
                             </searchBar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Šeit varēs atrast e-vielas datu bāzē" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sYQ-mM-U0v">
-                                <rect key="frame" x="39" y="320" width="296" height="27"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Šeit varēs atrast e-vielas datu bāzē" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sYQ-mM-U0v">
+                                <rect key="frame" x="53" y="323.5" width="268" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="sYQ-mM-U0v" firstAttribute="centerY" secondItem="Irb-vr-czN" secondAttribute="centerY" id="PuG-e8-2gB"/>
+                            <constraint firstItem="sYQ-mM-U0v" firstAttribute="centerX" secondItem="Irb-vr-czN" secondAttribute="centerX" id="luI-UB-fk4"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Meklēt E-vielu" image="Search Icon (Tab Bar)" id="utr-BX-Ods"/>
                     <connections>
