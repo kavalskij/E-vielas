@@ -16,9 +16,9 @@
     self = [super init];
     if (self) {
         EvielasLibrary *eVielasLibrary = [[EvielasLibrary alloc] init];
-        NSArray *library = eVielasLibrary.library;
+        _library = eVielasLibrary.library;
         
-        NSDictionary *eVielasDictionary = library[index];
+        NSDictionary *eVielasDictionary = _library[index];
         
         _eVielasNumurs = [eVielasDictionary objectForKey:kEviela];
         _eVielasNosaukums = [eVielasDictionary objectForKey:kNosaukums];

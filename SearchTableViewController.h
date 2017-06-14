@@ -7,13 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "EvielasLibrary.h"
 
-@interface SearchTableViewController : UITableViewController <UISearchControllerDelegate, UISearchBarDelegate, UISearchResultsUpdating>
 
-@property (strong, nonatomic) UISearchController *searchController;
+@interface SearchTableViewController : UITableViewController <UISearchBarDelegate, UITextFieldDelegate>
 
-@property (nonatomic, strong) NSMutableArray * allItems;
-@property (nonatomic, strong) NSMutableArray * filteredItems;
-@property (nonatomic, weak) NSArray * displayedItems;
+
+@property (nonatomic, strong) NSArray *allItems;
+@property (nonatomic,strong) NSMutableArray *sortedArray;
+@property (nonatomic, strong) EvielasLibrary *library;
+
+@property (weak, nonatomic) IBOutlet UISearchBar *searchField;
+
+
 
 @end

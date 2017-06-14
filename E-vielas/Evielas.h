@@ -11,6 +11,8 @@
 
 @interface Evielas : NSObject
 
+@property (strong, nonatomic) NSArray *library;
+
 @property (strong, nonatomic) NSString *eVielasNumurs;
 @property (strong, nonatomic) NSString *eVielasNosaukums;
 @property (strong, nonatomic) NSString *eVielasIespPielietojums;

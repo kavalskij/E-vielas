@@ -22,7 +22,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-   
+    EvielasLibrary *searchLibrary = [[EvielasLibrary alloc] init];
+    
+    self.eVielasArray = [searchLibrary.library valueForKey:@"eViela"];
     
 }
 
@@ -39,18 +41,20 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
-    EvielasLibrary *count = [[EvielasLibrary alloc] init];
-    NSUInteger countEvielas = [count.library count];
+    //EvielasLibrary *count = [[EvielasLibrary alloc] init];
+    //NSUInteger countEvielas = [count.library count];
     
-    return countEvielas;
+    return self.eVielasArray.count;
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
     
-    Evielas *eVielas = [[Evielas alloc] initWithIndex:indexPath.row];
-    cell.textLabel.text = eVielas.eVielasNumurs;
+    //Evielas *eVielas = [[Evielas alloc] initWithIndex:indexPath.row];
+    //cell.textLabel.text = eVielas.eVielasNumurs;
+    
+    cell.textLabel.text = [self.eVielasArray objectAtIndex:indexPath.row];
 
     
     return cell;
