@@ -26,8 +26,11 @@
     EvielasLibrary *searchLibrary = [[EvielasLibrary alloc] init];
     
     self.allItems = [searchLibrary.library valueForKey:@"eViela"];
+    self.totalItelms = searchLibrary.library;
     
     self.sortedArray = [[NSMutableArray alloc] init];
+    self.totalSortedArray = [[NSMutableArray alloc] init];
+    
     
     
 }
@@ -46,7 +49,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 
- 
+    
     if (self.sortedArray.count > 0) {
         return self.sortedArray.count;
     } else {
@@ -58,14 +61,14 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
 
-
+    
     if (self.sortedArray.count > 0) {
+
         cell.textLabel.text = [self.sortedArray objectAtIndex:indexPath.row];;
     } else {
         cell.textLabel.text = [self.allItems objectAtIndex:indexPath.row];
     }
     
-    [self performSegueWithIdentifier:@"showEvielasDetails" sender:indexPath];
  
     return cell;
 }
@@ -84,9 +87,13 @@
 - (void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText {
     
     NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF contains[cd] %@", searchText];
+    NSPredicate *predicate2 = [NSPredicate predicateWithFormat:@"%K contains[cd] %@",kEviela, searchText];
     NSMutableArray *filteredArray = [NSMutableArray arrayWithArray:[self.allItems filteredArrayUsingPredicate:predicate]];
+    NSMutableArray *totalFilteredArray = [NSMutableArray arrayWithArray:[self.totalItelms filteredArrayUsingPredicate:predicate2]];
     self.sortedArray = filteredArray;
-    
+    self.totalSortedArray = totalFilteredArray;
+
+
     [self.tableView reloadData];
   
 }
@@ -131,15 +138,38 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     
     if ([segue.identifier isEqualToString:@"showEvielasDetails"]) {
-
-            NSIndexPath *path = [self.tableView indexPathForSelectedRow];
             
             EvielasDetailViewController *detailViewController = [segue destinationViewController];
-            
+            NSIndexPath *path = [self.tableView indexPathForSelectedRow];
+        
+        
+        if (self.sortedArray.count == 0) {
             detailViewController.eVielas = [[Evielas alloc] initWithIndex:path.row];
-        
-        
+            
+        } else {
+            
+            NSString * stringName = self.sortedArray[path.row];
+            
+            NSArray * arrayNames = [[EvielasLibrary alloc] init].library;
+            
+            NSPredicate * predicate = [NSPredicate predicateWithFormat:@"SELF.eViela contains[cd] %@",stringName];
+            
+            NSArray * arraySelectedName  = [arrayNames filteredArrayUsingPredicate:predicate];
+            
+            
+            if (arraySelectedName.count>0) {
+                
+                NSDictionary* eVielasDictionary  = arraySelectedName[0];
+                
+                Evielas * objEvielas = [[Evielas alloc] init];
+                objEvielas.eVielasNumurs = [eVielasDictionary objectForKey:kEviela];
+                objEvielas.eVielasNosaukums = [eVielasDictionary objectForKey:kNosaukums];
+                objEvielas.eVielasIespPielietojums = [eVielasDictionary objectForKey:kIespPielietojums];
+                objEvielas.eVielasIespIedarbiba= [eVielasDictionary objectForKey:kIespIedarbiba];
+                detailViewController.eVielas = objEvielas;
+            }
         }
+    }
 }
 
 @end

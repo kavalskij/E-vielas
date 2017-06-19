@@ -8,6 +8,7 @@
 
 #import "Evielas.h"
 #import "EvielasLibrary.h"
+#import "SearchTableViewController.h"
 
 @implementation Evielas
 
@@ -16,15 +17,29 @@
     self = [super init];
     if (self) {
         EvielasLibrary *eVielasLibrary = [[EvielasLibrary alloc] init];
+
         _library = eVielasLibrary.library;
         
-        NSDictionary *eVielasDictionary = _library[index];
+        NSDictionary *eVielasDictionary2 = _library[index];
+        _eVielasNumurs = [eVielasDictionary2 objectForKey:kEviela];
+        _eVielasNosaukums = [eVielasDictionary2 objectForKey:kNosaukums];
+        _eVielasIespPielietojums = [eVielasDictionary2 objectForKey:kIespPielietojums];
+        _eVielasIespIedarbiba= [eVielasDictionary2 objectForKey:kIespIedarbiba];
+    }
+    return self;
+}
+
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        self.library                        = @[];
+        self.filteredLibrary                = [@[] mutableCopy];
         
-        _eVielasNumurs = [eVielasDictionary objectForKey:kEviela];
-        _eVielasNosaukums = [eVielasDictionary objectForKey:kNosaukums];
-        _eVielasIespPielietojums = [eVielasDictionary objectForKey:kIespPielietojums];
-        _eVielasIespIedarbiba= [eVielasDictionary objectForKey:kIespIedarbiba];
-        
+        self.eVielasNumurs                  = @"";
+        self.eVielasNosaukums               = @"";
+        self.eVielasIespPielietojums        = @"";
+        self.eVielasIespIedarbiba           = @"";
     }
     return self;
 }

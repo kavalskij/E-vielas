@@ -12,6 +12,7 @@
 @interface Evielas : NSObject
 
 @property (strong, nonatomic) NSArray *library;
+@property (strong, nonatomic) NSMutableArray *filteredLibrary;
 
 @property (strong, nonatomic) NSString *eVielasNumurs;
 @property (strong, nonatomic) NSString *eVielasNosaukums;

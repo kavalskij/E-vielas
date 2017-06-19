@@ -41,18 +41,12 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
-    //EvielasLibrary *count = [[EvielasLibrary alloc] init];
-    //NSUInteger countEvielas = [count.library count];
-    
     return self.eVielasArray.count;
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
-    
-    //Evielas *eVielas = [[Evielas alloc] initWithIndex:indexPath.row];
-    //cell.textLabel.text = eVielas.eVielasNumurs;
     
     cell.textLabel.text = [self.eVielasArray objectAtIndex:indexPath.row];
 

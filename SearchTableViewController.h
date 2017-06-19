@@ -16,6 +16,11 @@
 @property (nonatomic, strong) NSArray *allItems;
 @property (nonatomic,strong) NSMutableArray *sortedArray;
 @property (nonatomic, strong) EvielasLibrary *library;
+@property (nonatomic, strong) NSMutableArray *globalEvielasArray;
+@property (nonatomic, strong) NSMutableDictionary *eVielasDictionary;
+@property (nonatomic, strong) NSArray *totalItelms;
+@property (nonatomic, strong) NSMutableArray *totalSortedArray;
+
 
 @property (weak, nonatomic) IBOutlet UISearchBar *searchField;
 
