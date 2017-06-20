@@ -93,16 +93,27 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="146"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="eViela" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ROB-hg-1AZ">
-                                        <rect key="frame" x="131" y="48" width="113" height="51"/>
+                                        <rect key="frame" x="8" y="8" width="113" height="51"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="39"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="textColor" red="1" green="0.0098715042252232044" blue="0.024829474598673684" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Children" translatesAutoresizingMaskIntoConstraints="NO" id="rQP-fr-AYQ">
+                                        <rect key="frame" x="8" y="67" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Infant" translatesAutoresizingMaskIntoConstraints="NO" id="0Qu-Ax-2dS">
+                                        <rect key="frame" x="66" y="67" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Animals" translatesAutoresizingMaskIntoConstraints="NO" id="cdv-od-dTp">
+                                        <rect key="frame" x="124" y="67" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
                                 </subviews>
-                                <color key="backgroundColor" red="1" green="0.14615461171852917" blue="0.15595574957858038" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstItem="ROB-hg-1AZ" firstAttribute="centerX" secondItem="IKC-07-1Cw" secondAttribute="centerX" id="ZSZ-TJ-6LX"/>
-                                    <constraint firstItem="ROB-hg-1AZ" firstAttribute="centerY" secondItem="IKC-07-1Cw" secondAttribute="centerY" id="yBe-i7-Ig1"/>
+                                    <constraint firstItem="ROB-hg-1AZ" firstAttribute="leading" secondItem="IKC-07-1Cw" secondAttribute="leading" constant="8" id="0IE-ki-fzH"/>
+                                    <constraint firstItem="ROB-hg-1AZ" firstAttribute="top" secondItem="IKC-07-1Cw" secondAttribute="top" constant="8" id="pJS-J3-IY0"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="keo-rV-KL8">
@@ -189,7 +200,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sC0-Pm-Ecy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2924" y="116"/>
+            <point key="canvasLocation" x="2924" y="115.59220389805098"/>
         </scene>
         <!--Meklēt E-vielu-->
         <scene sceneID="JE9-O6-kbA">
@@ -214,6 +225,17 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hIL-39-TB2" id="JYL-Tm-fPY">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vpA-zJ-AKI">
+                                            <rect key="frame" x="306" y="0.0" width="45" height="44"/>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="vpA-zJ-AKI" firstAttribute="leading" secondItem="JYL-Tm-fPY" secondAttribute="leadingMargin" constant="298" id="1U0-SQ-OMU"/>
+                                        <constraint firstItem="vpA-zJ-AKI" firstAttribute="top" secondItem="JYL-Tm-fPY" secondAttribute="top" id="Se0-mn-oMJ"/>
+                                        <constraint firstAttribute="trailing" secondItem="vpA-zJ-AKI" secondAttribute="trailing" constant="24" id="WQR-QZ-P8O"/>
+                                        <constraint firstAttribute="bottom" secondItem="vpA-zJ-AKI" secondAttribute="bottom" id="w5g-cX-qEp"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <segue destination="hGw-Pi-Bwr" kind="show" identifier="showEvielasDetails" id="BgB-Rk-qf6"/>
@@ -232,7 +254,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OTl-99-wuL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1874" y="-680"/>
+            <point key="canvasLocation" x="1872.8" y="-680.5097451274363"/>
         </scene>
         <!--Meklēt E-vielu-->
         <scene sceneID="9sq-4d-BLg">
@@ -291,7 +313,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Animals" width="148" height="144"/>
         <image name="Camera Icon (Tab Bar)" width="30" height="30"/>
+        <image name="Children" width="145" height="145"/>
+        <image name="Infant" width="182" height="172"/>
         <image name="Library Icon (Tab Bar)" width="30" height="30"/>
         <image name="Search Icon (Tab Bar)" width="30" height="30"/>
     </resources>

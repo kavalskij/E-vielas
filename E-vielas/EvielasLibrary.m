@@ -1275,43 +1275,9 @@ NSString *const kIespIedarbiba = @"iespIedarbība";
                          kNosaukums : @"Modificēta ciete",
                          kIespPielietojums : @"Krējums, jogurti, piena produkti, gaļas izstrādājumi, tomātu mērces un citos.",
                          kIespIedarbiba : @"Var būt ģenētiski modificēta. Nav noskaidrota ķermeņa izturība pret ķimikālijām, ko lieto cietes modificēšanai."},
-                     
-                     
-                     
-                     
-                     
-                    
-                     
-                     
-                     
-                     
-                     
-                     
-                     
-                     
-                     
-                     
-                     
-                     
-                     
-                     
-                     
-                     
-                     
-                     
-                     
-                     
-                     
-                     
-                     
-                     
-                     
-                     
-        
+ 
+                       ];
 
-                     ];
-        
-        
         
     }
     return self;
