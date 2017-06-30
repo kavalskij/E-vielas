@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F1850E71F0687240084B69A /* GroupLibraryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F1850E61F0687240084B69A /* GroupLibraryViewController.m */; };
 		9F31F4441EE81B4400AACFE5 /* SearchTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F31F4431EE81B4400AACFE5 /* SearchTableViewController.m */; };
 		9F37A99E1EC312CD00960F54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F37A99D1EC312CD00960F54 /* main.m */; };
 		9F37A9A11EC312CD00960F54 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F37A9A01EC312CD00960F54 /* AppDelegate.m */; };
@@ -22,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9F1850E51F0687240084B69A /* GroupLibraryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GroupLibraryViewController.h; path = ../GroupLibraryViewController.h; sourceTree = "<group>"; };
+		9F1850E61F0687240084B69A /* GroupLibraryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GroupLibraryViewController.m; path = ../GroupLibraryViewController.m; sourceTree = "<group>"; };
 		9F31F4421EE81B4400AACFE5 /* SearchTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SearchTableViewController.h; path = ../SearchTableViewController.h; sourceTree = "<group>"; };
 		9F31F4431EE81B4400AACFE5 /* SearchTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SearchTableViewController.m; path = ../SearchTableViewController.m; sourceTree = "<group>"; };
 		9F37A9991EC312CD00960F54 /* E-vielas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "E-vielas.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -79,6 +82,8 @@
 				9F37A9A01EC312CD00960F54 /* AppDelegate.m */,
 				9F63CABE1EC99BF900625903 /* TabBarViewController.h */,
 				9F63CABF1EC99BF900625903 /* TabBarViewController.m */,
+				9F1850E51F0687240084B69A /* GroupLibraryViewController.h */,
+				9F1850E61F0687240084B69A /* GroupLibraryViewController.m */,
 				9FEC5E471ECDBB63005417EE /* LibraryViewController.h */,
 				9FEC5E481ECDBB63005417EE /* LibraryViewController.m */,
 				9FEC5E4A1ED2E116005417EE /* EvielasDetailViewController.h */,
@@ -187,6 +192,7 @@
 				9FEC5E4C1ED2E116005417EE /* EvielasDetailViewController.m in Sources */,
 				9FEC5E541ED3130C005417EE /* Evielas.m in Sources */,
 				9F37A9A11EC312CD00960F54 /* AppDelegate.m in Sources */,
+				9F1850E71F0687240084B69A /* GroupLibraryViewController.m in Sources */,
 				9F37A99E1EC312CD00960F54 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
