@@ -63,7 +63,7 @@
     
     if (self.sortedArray.count > 0) {
 
-        cell.textLabel.text = [self.sortedArray objectAtIndex:indexPath.row];;
+        cell.textLabel.text = [self.sortedArray objectAtIndex:indexPath.row];
     } else {
         cell.textLabel.text = [self.allItems objectAtIndex:indexPath.row];
     }
